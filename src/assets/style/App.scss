@@ -1,0 +1,71 @@
+.dflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    padding: 0.6em 1.2em;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid rgb(71, 71, 71);
+}
+//---------- button --------
+button {
+    border-radius: 5px;
+    border: 1px solid transparent;
+    padding: 0.45em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+button:hover,
+input:hover,
+input:focus {
+    border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible,
+input:focus,
+input:focus-visible {
+    border: 1px solid white;
+    outline: 0px;
+}
+.searchbtn{
+    border-radius: 0px 5px 5px 0px;
+}
+//---------- button --------
+
+.weather{
+    padding-left: 0px;
+}
+.weathericon{
+    width: 50px;
+    transform: translate(0px, 19px);
+    // padding: 10px;
+}
+.theattribute{
+    padding-right: 5px;
+}
+.last_update{
+    color: #ccccccb8;
+    font-size: small;
+}
+.NevBar{
+    position: fixed;
+    top: 0px;
+    right: 5px;
+    list-style: none;
+    li{
+        // list-style: none;
+        display: inline-flex;
+        padding: 0px 5px;
+    }
+}
+.nevlink.active{
+    color: #d100d1;
+}
