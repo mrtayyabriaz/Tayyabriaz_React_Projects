@@ -1,8 +1,29 @@
-# React + Vite
+# Tayyab Riaz | Projects
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Weather Check
+Check for weather condition all over the world.
 
-Currently, two official plugins are available:
+Enter Countery Name and check
+- Weather Condition of Capital City
+- Name of Capital City
+- Temperature in Celcius
+- Temperature in Fahrenheit
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Search Git Hub User Profiles
+Enter any github username and Check
+
+- profile photo
+- Bio
+- Number of Followers
+- List of Followers
+- Number of Followings
+- List of Followings
+- Number of Public Repositories
+
+## Visit Website
+[Tayyab Riaz Projects](https://tayyabriaz-projects.netlify.app/)
+
+## Copy Website Link
+```bash
+https://tayyabriaz-projects.netlify.app/
+```

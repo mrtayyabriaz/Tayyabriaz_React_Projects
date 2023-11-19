@@ -53,7 +53,7 @@ return(
         <span className='weather'>{props.temp_c}</span>
       </div>
       <div>
-        <span className="theattribute">Temperature Farnhite:</span>
+        <span className="theattribute">Temperature Fahrenheit:</span>
         <span className='weather'>{props.temp_f}</span>
       </div>
     </>

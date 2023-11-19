@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './assets/style/App.min.css'
 import Weather from './Weather';
-import { BrowserRouter, Route, Routes, useSearchParams } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Nevbar from './Nevbar';
 import Home from './home';
 import GithubUserSearch from './Github';
@@ -34,7 +34,7 @@ function App() {
           //------- search params -----------
 
           //----------- result -----------
-          // console.log(result);
+          console.log(result);
           setweather(result.current.condition.text);
           setweathericon(result.current.condition.icon);
           setlast_updated(result.current.last_updated);

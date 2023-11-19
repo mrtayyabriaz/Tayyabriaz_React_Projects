@@ -1,14 +1,55 @@
-.dflex{
+//--------- display flex ----------
+.dflex {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.dflex_col {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.dflex_start {
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+}
+.dflex_col_start {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+}
+.dflex_top {
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+}
+//--------- display flex ----------
+
+//--------- colors ----------
+.text-lite{
+    color: rgba(170, 170, 170, 0.765);
+}
+//--------- colors ----------
 
 input {
-    padding: 0.6em 1.2em;
+    padding: .45em 1.2em;
     border-radius: 5px 0px 0px 5px;
     border: 1px solid rgb(71, 71, 71);
 }
+
+a {
+    font-weight: 500;
+    color: #878dff;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #535bf2;
+}
+
 //---------- button --------
 button {
     border-radius: 5px;
@@ -35,37 +76,78 @@ input:focus-visible {
     border: 1px solid white;
     outline: 0px;
 }
-.searchbtn{
+
+.searchbtn {
     border-radius: 0px 5px 5px 0px;
 }
-//---------- button --------
 
-.weather{
+//---------- button --------
+//--------- Weather -----------
+.weather {
     padding-left: 0px;
 }
-.weathericon{
+
+.weathericon {
     width: 50px;
-    transform: translate(0px, 19px);
+    transform: translate(0px, -5px);
     // padding: 10px;
 }
-.theattribute{
+
+.theattribute {
     padding-right: 5px;
 }
-.last_update{
+
+.last_update {
     color: #ccccccb8;
     font-size: small;
 }
-.NevBar{
+
+//--------- Weather -----------
+
+//--------- Nevbar -----------
+.Nevbar {
     position: fixed;
     top: 0px;
-    right: 5px;
-    list-style: none;
-    li{
-        // list-style: none;
-        display: inline-flex;
-        padding: 0px 5px;
+    left: 0px;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100dvw;
+
+    .NevLinks {
+        margin: auto 0px auto auto;
+        // align-items: end;
+        padding: 10px 5px;
+        list-style: none;
+
+        li {
+            // list-style: none;
+            display: inline-flex;
+            padding: 0px 5px;
+        }
     }
 }
-.nevlink.active{
-    color: #d100d1;
+.logoimg{
+    width: 100px;
+    filter: drop-shadow(0px 0px 4px #9fff9e);
 }
+.nevlink.active {
+    color: #d115d1;
+}
+
+//--------- Nevbar -----------
+
+//--------- github -----------
+
+.git_avatar {
+    background: linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(45deg, #0fd850, #f9f047) border-box;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    width: 80px;
+}
+.user_bio{
+    max-width: 65dvw;
+}
+//--------- github -----------
