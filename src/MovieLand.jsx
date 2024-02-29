@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './assets/style/MovieLand.css'
 import SearchSvg from './assets/static/search.svg'
 
-const api_url = 'http://www.omdbapi.com/?i=tt3896198&apikey=5d39e130';
+const api_url = 'https://www.omdbapi.com/?i=tt3896198&apikey=5d39e130';
 
 const MovieLand = () => {
 
