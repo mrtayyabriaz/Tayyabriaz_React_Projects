@@ -4,34 +4,53 @@
     align-items: center;
     justify-content: center;
 }
+
 .dflex_col {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: center;
 }
+
 .dflex_start {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: flex-start;
 }
+
 .dflex_col_start {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: center;
 }
+
 .dflex_top {
     display: flex;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: center;
 }
-//--------- display flex ----------
 
+//--------- display flex ----------
+*::-webkit-scrollbar {
+    width: 0px;
+}
+
+h1 {
+
+    font-size: 2rem;
+    letter-spacing: 0.9px;
+    background:linear-gradient(25deg, rgb(68 77 255) 0%, rgb(194 92 255) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
 //--------- colors ----------
-.text-lite{
+.text-lite {
     color: rgba(170, 170, 170, 0.765);
 }
+
 //--------- colors ----------
 
 input {
@@ -113,9 +132,8 @@ input:focus-visible {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100dvw;
+    width: 100%;
     z-index: 5;
-
     .NevLinks {
         margin: auto 0px auto auto;
         // align-items: end;
@@ -129,10 +147,12 @@ input:focus-visible {
         }
     }
 }
-.logoimg{
+
+.logoimg {
     width: 100px;
     filter: drop-shadow(0px 0px 4px #9fff9e);
 }
+
 .nevlink.active {
     color: #d115d1;
 }
@@ -148,7 +168,9 @@ input:focus-visible {
     border-radius: 10px;
     width: 80px;
 }
-.user_bio{
+
+.user_bio {
     max-width: 65dvw;
 }
+
 //--------- github -----------

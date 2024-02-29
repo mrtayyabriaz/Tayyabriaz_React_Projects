@@ -27,7 +27,7 @@ function getweather(){
 
 return(
     <>
-     <h2>Weather</h2>
+     <h1>Weather</h1>
         <form className='dflex' onSubmit={(e) => { e.preventDefault() }}>
           <input type="text" onChange={(e) => { setsearch(e.target.value); }} value={search} />
           <button className="searchbtn" onClick={() => {getweather()}}>Search</button>

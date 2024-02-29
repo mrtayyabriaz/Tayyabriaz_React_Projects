@@ -20,7 +20,7 @@ const GithubUserSearch = () => {
 
     //------------ create headers & options -----------
     const headers = new Headers();
-    headers.append("Authorization", `Bearer ${accessToken}`);
+    headers.append("Authorization", `Bearer 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`);
     headers.append("X-GitHub-Api-Version", "2022-11-28");
 
     const options = {
@@ -128,7 +128,7 @@ const GithubUserSearch = () => {
 
   return (
     <div>
-      <h2>Search Git Hub Users</h2>
+      <h1>Search Git Hub Users</h1>
       <form
         onSubmit={(e) => {
           e.preventDefault();
