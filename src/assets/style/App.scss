@@ -114,6 +114,7 @@ input:focus-visible {
     align-items: center;
     justify-content: center;
     width: 100dvw;
+    z-index: 5;
 
     .NevLinks {
         margin: auto 0px auto auto;

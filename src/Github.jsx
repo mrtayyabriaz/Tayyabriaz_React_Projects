@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import conf from '../conf/conf'
 const GithubUserSearch = () => {
   const [username, setUsername] = useState("mrtayyabriaz");
   const [userData, setUserData] = useState(null);
@@ -15,8 +15,7 @@ const GithubUserSearch = () => {
 
     //--------- set url and accesstoken ----------
     const url = `https://api.github.com/users/${username}`;
-    const accessToken =
-      "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";
+    const accessToken = conf.github_token;
     //--------- set url and accesstoken ----------
 
     //------------ create headers & options -----------
@@ -59,8 +58,7 @@ const GithubUserSearch = () => {
 
     //--------- set url and accesstoken ----------
     const url = `https://api.github.com/users/${username}/followers`;
-    const accessToken =
-      "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";
+    const accessToken = conf.github_token;
     //--------- set url and accesstoken ----------
 
     //------------ create headers & options -----------
@@ -94,8 +92,7 @@ const GithubUserSearch = () => {
 
     //--------- set url and accesstoken ----------
     const url = `https://api.github.com/users/${username}/following`;
-    const accessToken =
-      "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";
+    const accessToken = conf.github_token;
     //--------- set url and accesstoken ----------
 
     //------------ create headers & options -----------

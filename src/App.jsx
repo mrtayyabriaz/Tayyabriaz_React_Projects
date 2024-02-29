@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Nevbar from './Nevbar';
 import Home from './home';
 import GithubUserSearch from './Github';
+import MovieLand from './MovieLand';
 
 function App() {
   //---------- use State ------------
@@ -54,6 +55,7 @@ function App() {
           <Route path='/' element={<Home />}/>
           <Route path='/weather' element={<Weather last_updated={last_updated} temp_c={temp_c} temp_f={temp_f} region={region} weathericon={weathericon} weather={weather} GetWeatherJson={GetWeatherJson} />} />
           <Route path='/gitsearch' element={<GithubUserSearch />}/>
+          <Route path='/movies' element={<MovieLand />}/>
           <Route path='*' element={<h1>404 Page Not Found</h1>}/>
         </Routes>
       </BrowserRouter>
