@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
-import conf from '../conf/conf'
+import conf from './conf/conf'
+import { Query, useQueryClient, useQuery } from "@tanstack/react-query";
+
+
 const GithubUserSearch = () => {
   const [username, setUsername] = useState("mrtayyabriaz");
   const [userData, setUserData] = useState(null);
@@ -20,7 +23,7 @@ const GithubUserSearch = () => {
 
     //------------ create headers & options -----------
     const headers = new Headers();
-    headers.append("Authorization", `Bearer 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`);
+    headers.append("Authorization", `Bearer ${accessToken}`);
     headers.append("X-GitHub-Api-Version", "2022-11-28");
 
     const options = {
