@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import conf from './conf/conf'
+import conf from '../conf/conf'
 import { Query, useQueryClient, useQuery } from "@tanstack/react-query";
 
 
@@ -130,26 +130,30 @@ const GithubUserSearch = () => {
   // }, []);
 
   return (
-    <div>
-      <h1>Search Git Hub Users</h1>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          fetchUserData();
-          fetchFollowers();
-          fetchFollowings();
-        }}
-        className="dflex">
-        <input
-          type="text"
-          placeholder="Enter GitHub username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <button type="submit" className="searchbtn">
-          Search
-        </button>
-      </form>
+    <div className="mt-14 container flex flex-col">
+      <div className="flex flex-col">
+
+        <h1>Search Git Hub Users</h1>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            fetchUserData();
+            fetchFollowers();
+            fetchFollowings();
+          }}
+          className="dflex">
+          <input
+            className="bg-zinc-900"
+            type="text"
+            placeholder="Enter GitHub username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <button type="submit" className="bg-zinc-800 border-zinc-600 rounded-e-md rounded-s-none">
+            Search
+          </button>
+        </form>
+      </div>
 
       {/*----------loading error-------*/}
       {loading && <p>Loading...</p>}

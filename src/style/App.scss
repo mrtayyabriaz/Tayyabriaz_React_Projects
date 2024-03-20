@@ -40,12 +40,13 @@ h1 {
 
     font-size: 2rem;
     letter-spacing: 0.9px;
-    background:linear-gradient(25deg, rgb(68 77 255) 0%, rgb(194 92 255) 100%);
+    background: linear-gradient(25deg, rgb(68 77 255) 0%, rgb(194 92 255) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: fit-content;
 }
+
 //--------- colors ----------
 .text-lite {
     color: rgba(170, 170, 170, 0.765);
@@ -102,19 +103,6 @@ input:focus-visible {
 
 //---------- button --------
 //--------- Weather -----------
-.weather {
-    padding-left: 0px;
-}
-
-.weathericon {
-    width: 50px;
-    transform: translate(0px, -5px);
-    // padding: 10px;
-}
-
-.theattribute {
-    padding-right: 5px;
-}
 
 .last_update {
     color: #ccccccb8;
@@ -134,6 +122,7 @@ input:focus-visible {
     justify-content: center;
     width: 100%;
     z-index: 5;
+
     .NevLinks {
         margin: auto 0px auto auto;
         // align-items: end;

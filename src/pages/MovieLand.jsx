@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import './assets/style/MovieLand.css'
-import SearchSvg from './assets/static/search.svg'
+import '../style/MovieLand.css'
+import SearchSvg from '/search.svg'
 
 const api_url = 'https://www.omdbapi.com/?i=tt3896198&apikey=5d39e130';
 
@@ -34,11 +34,11 @@ const MovieLand = () => {
   }
 
   return (<>
-    <div className="app">
+    <div className="app mt-14">
       <h1>Movie Land</h1>
     </div>
 
-    <div className="container">
+    <div className="container mx-auto">
       <div className="search">
         <form onSubmit={handleSearch}>
           <input type="text" autoFocus={true} value={moviename} onChange={(e) => setMoviename(e.target.value)} />

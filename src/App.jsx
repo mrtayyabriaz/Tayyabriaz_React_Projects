@@ -1,10 +1,11 @@
-import './assets/style/App.min.css'
-import Weather from './Weather';
+import './style/index.css'
+import './style/App.min.css'
+import Weather from './pages/Weather';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Nevbar from './Nevbar';
-import Home from './home';
-import GithubUserSearch from './Github';
-import MovieLand from './MovieLand';
+import Nevbar from './components/Nevbar';
+import Home from './pages/home';
+import GithubUserSearch from './pages/Github';
+import MovieLand from './pages/MovieLand';
 
 function App() {
 

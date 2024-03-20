@@ -1,6 +1,6 @@
 // import React from 'react'
 import { NavLink } from 'react-router-dom';
-import logo from './assets/static/logo.png';
+import logo from '/logo.png';
 
 const Nevbar = () => {
   return (<>
@@ -14,7 +14,7 @@ const Nevbar = () => {
         <li><a href='https://my-todo-place.netlify.app/' target='_blank' className={"nevlink"}>🔗My Todo Place</a></li>
         <li><a href='https://mrtayyabriaz.netlify.app/' target='_blank' className={"nevlink"}>🔗Mr Tayyab Riaz</a></li>
       </ul>
-    </div><br /> <br /><br />
+    </div>
   </>
   )
 }
