@@ -6,6 +6,8 @@ import Nevbar from './components/Nevbar';
 import Home from './pages/home';
 import GithubUserSearch from './pages/Github';
 import MovieLand from './pages/MovieLand';
+import NotFound from './pages/NotFound';
+import Calculator from './pages/Calculator/Calculator';
 
 function App() {
 
@@ -21,7 +23,8 @@ function App() {
           <Route path='/weather' element={<Weather />} />
           <Route path='/gitsearch' element={<GithubUserSearch />} />
           <Route path='/movies' element={<MovieLand />} />
-          <Route path='*' element={<h1>404 Page Not Found</h1>} />
+          <Route path='/calculator' element={<Calculator />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>

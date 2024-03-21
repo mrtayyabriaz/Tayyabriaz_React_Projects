@@ -34,19 +34,19 @@ const MovieLand = () => {
   }
 
   return (<>
-    <div className="app mt-14">
+    <div className="app mt-7">
       <h1>Movie Land</h1>
     </div>
 
     <div className="container mx-auto">
-      <div className="search">
-        <form onSubmit={handleSearch}>
-          <input type="text" autoFocus={true} value={moviename} onChange={(e) => setMoviename(e.target.value)} />
-          <button onSubmit={() => handleSearch()} type='submit'>
-            <img src={SearchSvg} alt="" />
-          </button>
-        </form>
-      </div>
+      <form onSubmit={handleSearch}>
+        <input type="text"
+          className='bg-zinc-900' autoFocus={true} value={moviename} onChange={(e) => setMoviename(e.target.value)} />
+        <button
+          className='bg-zinc-800 border-zinc-600 rounded-e-md rounded-s-none' onSubmit={() => handleSearch()} type='submit'>
+          Search
+        </button>
+      </form>
 
       <div className="empty">
         {searching ? "searching..." : ''}

@@ -87,7 +87,7 @@ export const Weather = () => {
 
   return (
     <>
-      <div className="mt-16">
+      <div className="mt-12">
         <div className="flex flex-col items-center ">
 
           <h1>Weather</h1>

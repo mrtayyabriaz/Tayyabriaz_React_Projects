@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.cell {
+  background-color: lightgray;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #ccc;
+}
